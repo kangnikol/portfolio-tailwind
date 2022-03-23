@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>How to use startpage | Nicholas Portofolio</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+</head>
+
+<body class="container mx-auto my-auto bg-base dark:bg-dk_base scroll-smooth>
+    <!-- Navbar -->
+    <div class=" nav bg-base dark:bg-dk_base py-7 px-5 fixed-top">
+    <h1 class="text-iris dark:text-dk_iris font-bold text-2xl">
+        <a href="/">
+            Portfolio Nicholas
+        </a>
+    </h1>
+    <div class="py-3 flex flex-row gap-x-5">
+        <a href="/my-project.html" class="text-rose dark:text-dk_rose font-medium text-sm">
+            <h1>
+                My Project
+            </h1>
+        </a>
+        <a href="/" class="text-rose dark:text-dk_rose font-medium text-sm">
+            <h1>English</h1>
+        </a>
+        <a href="/indonesia.html" class="text-rose dark:text-dk_rose font-medium text-sm">
+            <h1>Indonesia</h1>
+        </a>
+    </div>
+    </div>
+    <!-- Content -->
+    <div class="content mt-4 px-5 text-text flex flex-col justify-center" id="Body">
+        <h1 class="font-bold text-2xl text-iris dark:text-dk_iris pb-10">
+            How to use Startpage
+        </h1>
+        <img src="https://cdn.discordapp.com/attachments/917983285370572821/956037491209687061/Screen_Shot_2022-03-23_at_10.51.28.png"
+            alt="Startpage Rosé Pine Theme" class="pb-10">
+        <h1 class="font-bold text-2xl text-iris dark:text-dk_iris">
+            What is Startpage?
+        </h1>
+        <p class="text-text dark:text-dk_text py-7">Startpage is a New theme made by Rosé Pine that make your startpage
+            of your browser looks new and clean.</p>
+        <h1 class="font-bold text-2xl text-iris dark:text-dk_iris">
+            How to use it?
+        </h1>
+        <p class="text-text dark:text-dk_text py-7">Simple, you cant just paste this
+            <a href="https://startpage-rosepine.herokuapp.com/">
+                link
+            </a>
+            to URL and that's it.</p>
+        <p class="text-text dark:text-dk_text">But, there is someways to use it, You can add the startpage as
+            default to make it permanent, so You can use
+            it forever</p>
+        <div class="list-disc py-7">
+            <li>First you need an extention. <a
+                    href="https://chrome.google.com/webstore/detail/fast-new-tab-redirect/ohnfdmfkceojnmepofncbddpdicdjcoi?hl=en-US"
+                    class="text-rose dark:text-dk_rose">
+                    Chrome
+                </a>
+                and <a href="https://addons.mozilla.org/en-US/firefox/addon/new-tab-override/"
+                    class="text-rose dark:text-dk_rose">Firefox</a>.
+            </li>
+            <li>Then, Paste this <a href="https://startpage-rosepine.herokuapp.com/"
+                    class="text-rose dark:text-dk_rose">Link</a>.</li>
+            <li>Done.</li>
+        </div>
+    </div>
+</body>
+<div class="flex justify-end pb-7 scroll-smooth">
+    <button onclick="topFunction()" id="myBtn"
+        class="text-base dark:text-dk_base px-3 pt-2 bg-rose rounded-lg font-bold text-2xl scroll-smooth"
+        title="Go to top">^</button>
+</div>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    // Moon
+                    dk_base: "#232136",
+                    dk_surface: "#2a273f",
+                    dk_overlay: "#393552",
+                    dk_inactive: "#59546d",
+                    dk_subtle: "#817c9c",
+                    dk_text: "#e0def4",
+                    dk_love: "#eb6f92",
+                    dk_gold: "#f6c177",
+                    dk_rose: "#ea9a97",
+                    dk_pine: "#3e8fb0",
+                    dk_foam: "#9ccfd8",
+                    dk_iris: "#c4a7e7",
+                    dk_highlightLow: "#c4a7e7",
+                    dk_highlightMed: "#2a283d",
+                    dk_highlightHigh: "#3f3c53",
+                    // Dawn
+                    base: "#faf4ed",
+                    surface: "#fffaf3",
+                    overlay: "#f2e9e1",
+                    muted: "#9893a5",
+                    subtle: "#797593",
+                    text: "#575279",
+                    love: "#b4637a",
+                    gold: "#ea9d34",
+                    rose: "#d7827e",
+                    pine: "#286983",
+                    foam: "#56949f",
+                    iris: "#907aa9",
+                    highlightLow: "#f4ede8",
+                    highlightMed: "#dfdad9",
+                    highlightHigh: "#cecacd",
+                },
+            },
+        },
+    };
+    //Get the button:
+    mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+</script>
+
+</html>
