@@ -1,20 +1,5 @@
-.text-input.astro-A4YOCCPA::-moz-placeholder {
-  opacity: 50%;
-}
-.text-input.astro-A4YOCCPA:-ms-input-placeholder {
-  opacity: 50%;
-}
-.text-input.astro-A4YOCCPA::placeholder {
-  opacity: 50%;
-}
 body {
   font-family: Mulish, sans-serif;
-}
-p {
-  font-size: 1.125rem !important;
-  line-height: 2rem !important;
-  --tw-text-opacity: 1;
-  color: hsl(0 0% 80% / var(--tw-text-opacity));
 }
 li {
   line-height: 2rem;
@@ -82,8 +67,6 @@ p:not(:first-of-type) {
 }
 .link.active {
   position: relative;
-  --tw-text-opacity: 1;
-  color: hsl(0 0% 8% / var(--tw-text-opacity));
 }
 .link.active:after {
   position: absolute;
@@ -192,9 +175,6 @@ p:not(:first-of-type) {
 }
 #article ul li {
   margin-top: 0.75rem;
-}
-#article ol {
-  list-style-type: decimal;
 }
 #article ol li {
   margin-top: 0.5rem;

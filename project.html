@@ -25,20 +25,22 @@
       id="contactModal"
     >
       <div
-        class="relative h-full rounded-3xl transition-all duration-300 ease-in-out border-gray-600 flex items-center astro-A4YOCCPA"
+        class="relative h-full rounded-3xl transition-all duration-300 ease-in-out border-highlightHigh flex items-center astro-A4YOCCPA"
         style="top: 1024px"
       >
         <div
           class="max-w-3xl lg:mx-auto mr-8 text-based dark:text-dk_based astro-A4YOCCPA"
         >
-          <div class="text-3xl font-bold text-foam dark:dk_foam astro-A4YOCCPA">
+          <div
+            class="text-3xl font-bold text-gold dark:text-dk_gold astro-A4YOCCPA"
+          >
             Get In Touch
           </div>
           <div
             class="absolute right-8 top-8 text-based dark:text-dk_based items-center gap-2 flex astro-A4YOCCPA"
           >
             <span
-              class="bg-gray-700 text-xs px-2 py-1 rounded hidden lg:block astro-A4YOCCPA"
+              class="bg-highlightHigh dark:bg-dk_highlightHigh text-xs px-2 py-1 rounded hidden lg:block astro-A4YOCCPA"
               >esc</span
             >
             <svg
@@ -46,7 +48,7 @@
               width="24"
               height="24"
               id="close"
-              class="hover:text-text dark:text-dk_text cursor-pointer astro-A4YOCCPA"
+              class="hover:text-text dark:hover:text-dk_text cursor-pointer astro-A4YOCCPA"
             ></svg>
           </div>
           <form
@@ -54,7 +56,7 @@
             method="POST"
             class="astro-A4YOCCPA"
           >
-            <p class="mt-2 astro-A4YOCCPA">
+            <p class="mt-2 text-text dark:text-dk_text astro-A4YOCCPA">
               Do you have an interesting job opportunity? Want to ask me a
               question? Or, just want to connect? Feel free to contact me.
             </p>
@@ -63,24 +65,27 @@
                 required
                 name="name"
                 type="text"
-                class="flex-1 bg-overlay dark:bg-dk_overlay p-3 rounded outline-none text-input text-lg w-64 border border-gray-700 astro-A4YOCCPA"
+                class="flex-1 bg-surface dark:bg-dk_surface placeholder:text-text dark:placeholder:text-dk_text placeholder:opacity-50 p-3 rounded outline-none text-input text-lg w-64 border border-highlightHigh astro-A4YOCCPA"
                 placeholder="Full Name"
               />
               <input
                 required
                 name="email"
                 type="email"
-                class="flex-1 bg-overlay dark:bg-dk_overlay p-3 rounded outline-none text-input text-lg w-64 border border-gray-700 astro-A4YOCCPA"
+                class="flex-1 bg-surface dark:bg-dk_surface placeholder:text-text dark:placeholder:text-dk_text placeholder:opacity-50 p-3 rounded outline-none text-input text-lg w-64 border border-highlightHigh astro-A4YOCCPA"
                 placeholder="Email"
               />
             </div>
             <textarea
               required
               name="message"
-              class="w-full bg-overlay dark:bg-dk_overlay p-3 rounded outline-none text-input mt-4 resize-none h-64 text-lg border border-gray-700 astro-A4YOCCPA"
+              class="w-full bg-surface dark:bg-dk_surface placeholder:text-text dark:placeholder:text-dk_text placeholder:opacity-50 p-3 rounded outline-none text-input mt-4 resize-none h-64 text-lg border border-highlightHigh astro-A4YOCCPA"
               placeholder="Message"
             ></textarea>
-            <button type="submit" class="inline-flex items-center gap-3 rounded-lg bg-gold dark:bg-dk_gold opacity-95 py-3 px-5 text-sm leading-5 font-semibold text-based dark:text-dk_based transition-all hover:opacity-100 active:scale-95 active:transform-none mt-4 astro-A4YOCCPA">
+            <button
+              type="submit"
+              class="inline-flex items-center gap-3 rounded-lg bg-gold dark:bg-dk_gold opacity-95 py-3 px-5 text-sm leading-5 font-semibold text-based dark:text-dk_based transition-all hover:opacity-100 active:scale-95 active:transform-none mt-4 astro-A4YOCCPA"
+            >
               Send
             </button>
           </form>
@@ -93,34 +98,48 @@
       class="flex justify-center max-w-3xl mx-auto lg:my-16 my-8 astro-A4YOCCPA"
     >
       <div class="hidden flex gap-8">
-        <a href="/" class="font-bold uppercase active:relative active:text-text active:dark:text-dk_text active:after:absolute active:after:content-[''] active:after:top-[-8px] active:after:left-[-10px] ">Home</a>
-        <a href="/project.html" class="font-bold uppercase text-text dark:text-dk_text hover:opacity-100 hover:transition-all opacity-40"
+        <a
+          href="/"
+          class="font-bold uppercase active:after:absolute active:after:content-[''] active:after:top-[-8px] active:after:left-[-10px]"
+          >Home</a
+        >
+        <a
+          href="/project.html"
+          class="font-bold uppercase text-based dark:text-dk_based hover:opacity-100 hover:transition-all opacity-40"
           >Projects</a
         >
       </div>
 
       <div class="flex justify-center gap-8 w-full">
         <span>
-          <a href="/" class="font-bold uppercase text-text dark:text-dk_text hover:opacity-100 hover:transition-all opacity-40">Home</a>
+          <a
+            href="/"
+            class="font-bold uppercase hover:opacity-100 hover:transition-all opacity-40"
+            >Home</a
+          >
         </span>
         <span>
-          <a href="/project.html" class="font-bold uppercase link active"
+          <a href="/project.html" class="font-bold text-based dark:text-dk_based uppercase link active"
             >Projects</a
           >
         </span>
       </div>
     </nav>
     <!-- End Navbar -->
-    <div class="flex flex-col ">
+    <div class="flex flex-col">
       <main class="flex-1 mt-12 max-w-5xl mx-auto">
         <div class="max-w-3xl mx-auto">
-          <h1 class="text-gold dark:dk_gold text-4xl font-black my-4 border-b border-highlightHigh py-2">
+          <h1
+            class="text-gold dark:text-dk_gold text-4xl font-black my-4 border-b border-highlightHigh py-4"
+          >
             Projects!
           </h1>
         </div>
 
         <div class="mb-16 gap-8" id="projects">
-          <p class="max-w-3xl mx-auto text-text dark:text-dk_texttext-text dark:text-dk_text">
+          <p
+            class="max-w-3xl mx-auto text-text dark:text-dk_texttext-text dark:text-dk_text"
+          >
             I believe it’s the best way to learn anything. You get full control
             over the creative side of programming. Here’s is a partial list of
             projects I have built over the last few years:
@@ -129,7 +148,9 @@
             class="bg-overlay dark:bg-dk_overlay flex lg:p-8 p-4 rounded-lg items-center side-project gap-8 flex-1"
           >
             <div class="flex-1 w-1/2">
-              <h2 class="text-gold dark:text-dk_gold text-2xl font-bold">Senja Solusi</h2>
+              <h2 class="text-gold dark:text-dk_gold text-2xl font-bold">
+                Senja Solusi
+              </h2>
               <div class="mb-4 mt-2">
                 <p class="text-text dark:text-dk_text">
                   A one-page website that tracks the accuracy of company
@@ -139,7 +160,11 @@
                 </p>
               </div>
 
-              <a class="inline-flex items-center gap-3 rounded-lg bg-gold dark:bg-dk_gold opacity-95 py-3 px-5 text-sm leading-5 font-semibold text-based dark:text-dk_based transition-all hover:opacity-100 active:scale-95 active:transform-none" href="https://senja.co.uk" target="_blank">
+              <a
+                class="inline-flex items-center gap-3 rounded-lg bg-gold dark:bg-dk_gold opacity-95 py-3 px-5 text-sm leading-5 font-semibold text-overlay dark:text-dk_overlay transition-all hover:opacity-100 active:scale-95 active:transform-none"
+                href="https://senja.co.uk"
+                target="_blank"
+              >
                 View Website
                 <svg
                   data-src="https://s2.svgbox.net/hero-outline.svg?ic=external-link"
@@ -161,7 +186,9 @@
             class="bg-overlay dark:bg-dk_overlay flex lg:p-8 p-4 rounded-lg items-center side-project gap-8 flex-1"
           >
             <div class="flex-1 w-1/2">
-              <h2 class="text-gold dark:text-dk_gold text-2xl font-bold">Pintek</h2>
+              <h2 class="text-gold dark:text-dk_gold text-2xl font-bold">
+                Pintek
+              </h2>
               <div class="mb-4 mt-2">
                 <p class="text-text dark:text-dk_text">
                   Pintek is a financial innovation company whose mission is to
@@ -171,7 +198,11 @@
                 </p>
               </div>
 
-              <a class="inline-flex items-center gap-3 rounded-lg bg-gold dark:bg-dk_gold opacity-95 py-3 px-5 text-sm leading-5 font-semibold text-based dark:text-dk_based transition-all hover:opacity-100 active:scale-95 active:transform-none" href="https://pintek.id" target="_blank">
+              <a
+                class="inline-flex items-center gap-3 rounded-lg bg-gold dark:bg-dk_gold opacity-95 py-3 px-5 text-sm leading-5 font-semibold text-overlay dark:text-dk_overlay transition-all hover:opacity-100 active:scale-95 active:transform-none"
+                href="https://pintek.id"
+                target="_blank"
+              >
                 View Website
                 <svg
                   data-src="https://s2.svgbox.net/hero-outline.svg?ic=external-link"
@@ -193,7 +224,9 @@
             class="bg-overlay dark:bg-dk_overlay flex lg:p-8 p-4 rounded-lg items-center side-project gap-8 flex-1"
           >
             <div class="flex-1 w-1/2">
-              <h2 class="text-gold dark:text-dk_gold text-2xl font-bold">Nichol+ Hotstar</h2>
+              <h2 class="text-gold dark:text-dk_gold text-2xl font-bold">
+                Nichol+ Hotstar
+              </h2>
               <div class="mb-4 mt-2">
                 <p class="text-text dark:text-dk_text">
                   Nichol+ Hotstar is actually a website that duplicate the looks
@@ -228,7 +261,9 @@
             class="bg-overlay dark:bg-dk_overlay flex p-4 rounded-lg items-center side-project gap-8 flex-1"
           >
             <div class="flex-1 w-1/2">
-              <h2 class="text-gold dark:text-dk_gold text-2xl font-bold">Startpage</h2>
+              <h2 class="text-gold dark:text-dk_gold text-2xl font-bold">
+                Startpage
+              </h2>
               <div class="mb-4 mt-2">
                 <p class="text-text dark:text-dk_text">
                   This Startpage is built with somebody else, using Rosé Pine
@@ -237,11 +272,22 @@
               </div>
 
               <a
-                class="inline-flex items-center gap-3 rounded-lg bg-gold dark:bg-dk_gold opacity-95 py-3 px-5 text-sm leading-5 font-semibold text-based dark:text-dk_based transition-all hover:opacity-100 active:scale-95 active:transform-none"
+                class="inline-flex items-center gap-3 rounded-lg bg-gold dark:bg-dk_gold opacity-95 py-3 px-5 text-sm leading-5 font-semibold text-overlay dark:text-dk_overlay transition-all hover:opacity-100 active:scale-95 active:transform-none"
                 href="https://startpage.kangnikol.xyz/"
                 target="_blank"
               >
                 View Website
+                <svg
+                  data-src="https://s2.svgbox.net/hero-outline.svg?ic=external-link"
+                  width="20"
+                  height="20"
+                ></svg>
+              </a>
+              <a
+                class="inline-flex items-center gap-3 rounded-lg bg-gold dark:bg-dk_gold opacity-95 ml-2 py-3 px-5 text-sm leading-5 font-semibold text-overlay dark:text-dk_overlay transition-all hover:opacity-100 active:scale-95 active:transform-none"
+                href="/how-to-use-startpage.html"
+              >
+                Tutorial
                 <svg
                   data-src="https://s2.svgbox.net/hero-outline.svg?ic=external-link"
                   width="20"
@@ -261,18 +307,16 @@
         </div>
       </main>
     </div>
-
-    <hr
-      class="mt-10 pt-10 border-[#444] max-w-3xl mx-auto h-4 astro-A4YOCCPA"
-    />
-
     <footer
-      class="text-text dark:text-dk_text max-w-3xl w-full flex justify-between mx-auto items-center mb-12 astro-A4YOCCPA"
+      class="text-text dark:text-dk_text max-w-3xl w-full flex justify-between mx-auto items-center mb-6 border-t border-highlightHigh pt-6 astro-A4YOCCPA"
     >
       <div class="opacity-50 text-text dark:text-dk_text">
         &copy; Nicholas Alvi Saputra, 2022
       </div>
-      <button class="inline-flex items-center gap-3 rounded-full bg-overlay dark:bg-dk_overlay px-5 py-3 text-text dark:text-dk_text transition-all hover:opacity-100 active:scale-95 active:transition-none astro-A4YOCCPA" id="contact">
+      <button
+        class="inline-flex items-center gap-3 rounded-full bg-overlay dark:bg-dk_overlay px-5 py-3 text-text dark:text-dk_text transition-all hover:opacity-100 active:scale-95 active:transition-none astro-A4YOCCPA"
+        id="contact"
+      >
         <svg
           data-src="https://s2.svgbox.net/materialui.svg?ic=mail"
           width="16"

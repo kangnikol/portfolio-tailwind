@@ -4,114 +4,200 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Simple Portfolio Made by HTML and TailwindCSS"
+    />
+    <!-- favicon -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>How to use startpage | kangnikol's Blog</title>
+    <title>How to Use Start Page! | Kangnikol's Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <link rel="stylesheet" href="/assets/style2.css" />
+    <script type="module" src="/assets/script.js"></script>
   </head>
-
-  <body
-    class="container xl:pl-64 lg:pl-32 md:pl-8 sm:pl-0 py-32 bg-based dark:bg-dk_based smooth-scroll"
-  >
-    <!-- Navbar -->
-    <div class="nav bg-based dark:bg-dk_based py-7 px-5 fixed-top">
-      <h1 class="text-iris dark:text-dk_iris font-bold text-2xl">
-        <a href="/"> (´ ∀ ` *) kangnikol's Blog </a>
-      </h1>
-      <div class="py-3 flex flex-row gap-x-5">
-        <a
-          href="/my-project.html"
-          class="underline text-rose dark:text-dk_rose font-medium text-sm"
-          style="text-decoration: none"
+  <body class="bg-based dark:bg-dk_based px-4 overflow-hidden">
+    <!-- Modal -->
+    <div
+      class="fixed h-screen w-full overflow-hidden hidden z-10 top-0 bg-[rgb(0,0,0,.75)] backdrop-blur-2xl astro-A4YOCCPA"
+      id="contactModal"
+    >
+      <div
+        class="relative h-full rounded-3xl transition-all duration-300 ease-in-out border-gray-600 flex items-center astro-A4YOCCPA"
+        style="top: 1024px"
+      >
+        <div
+          class="max-w-3xl lg:mx-auto mr-8 text-text dark:text-dk_text astro-A4YOCCPA"
         >
-          <h1>My Project</h1>
-        </a>
-        <a
-          href="/"
-          class="underline text-rose dark:text-dk_rose font-medium text-sm"
-          style="text-decoration: none"
-        >
-          <h1>English</h1>
-        </a>
-        <a
-          href="/indonesia.html"
-          class="underline text-rose dark:text-dk_rose font-medium text-sm"
-          style="text-decoration: none"
-        >
-          <h1>Indonesia</h1>
-        </a>
+          <div class="text-3xl font-bold text-primary astro-A4YOCCPA">
+            Get In Touch
+          </div>
+          <div
+            class="absolute right-8 top-8 text-text dark:text-dk_text items-center gap-2 flex astro-A4YOCCPA"
+          >
+            <span
+              class="bg-gray-700 text-xs px-2 py-1 rounded hidden lg:block astro-A4YOCCPA"
+              >esc</span
+            >
+            <svg
+              data-src="https://s2.svgbox.net/materialui.svg?ic=close"
+              width="24"
+              height="24"
+              id="close"
+              class="hover:text-text dark:text-dk_text cursor-pointer astro-A4YOCCPA"
+            ></svg>
+          </div>
+          <form
+            action="https://formspree.io/f/meqderqp"
+            method="POST"
+            class="astro-A4YOCCPA"
+          >
+            <p class="mt-2 text-text dark:text-dk_text astro-A4YOCCPA">
+              Do you have an interesting job opportunity? Want to ask me a
+              question? Or, just want to connect? Feel free to contact me.
+            </p>
+            <div class="lg:flex-row flex-col flex mt-6 gap-4 astro-A4YOCCPA">
+              <input
+                required
+                name="name"
+                type="text"
+                class="flex-1 bg-gray-800 p-3 rounded outline-none placeholder:text-text dark:placeholder:text-dk_text placeholder:opacity-50 text-input text-lg w-64 border border-gray-700 astro-A4YOCCPA"
+                placeholder="Full Name"
+              />
+              <input
+                required
+                name="email"
+                type="email"
+                class="flex-1 bg-gray-800 p-3 rounded outline-none placeholder:text-text dark:placeholder:text-dk_text placeholder:opacity-50 text-input text-lg w-64 border border-gray-700 astro-A4YOCCPA"
+                placeholder="Email"
+              />
+            </div>
+            <textarea
+              required
+              name="message"
+              class="w-full bg-gray-800 p-3 rounded outline-none placeholder:text-text dark:placeholder:text-dk_text placeholder:opacity-50 text-input mt-4 resize-none h-64 text-lg border border-gray-700 astro-A4YOCCPA"
+              placeholder="Message"
+            ></textarea>
+            <button
+              type="submit"
+              class="inline-flex items-center gap-3 rounded-lg bg-gold dark:bg-dk_gold opacity-95 py-3 px-5 text-sm leading-5 font-semibold text-text dark:text-dk_text transition-all hover:opacity-1 active:scale-95 active:transform-none mt-4 astro-A4YOCCPA"
+            >
+              Send
+            </button>
+          </form>
+        </div>
       </div>
     </div>
-    <!-- Content -->
-    <div
-      class="content mt-4 px-5 text-text flex flex-col justify-center"
-      id="Body"
+    <!-- End Modal -->
+    <nav
+      class="flex justify-center max-w-3xl mx-auto lg:my-16 my-8 astro-A4YOCCPA"
     >
-      <h1 class="font-bold text-2xl text-iris dark:text-dk_iris pb-10">
-        How to use Start Page
-      </h1>
-      <img
-        src="https://cdn.discordapp.com/attachments/917983285370572821/956037491209687061/Screen_Shot_2022-03-23_at_10.51.28.png"
-        alt="Start Page Rosé Pine Theme"
-        class="pb-10"
-      />
-      <h1 class="font-bold text-2xl text-iris dark:text-dk_iris">
-        What is Start Page?
-      </h1>
-      <p class="text-text dark:text-dk_text py-7">
-        <strong>Start Page</strong> is a New theme made by
-        <strong>Rosé Pine</strong> that make your start page of your browser
-        looks <strong>new</strong> and <strong>clean</strong>.
-      </p>
-      <h1 class="font-bold text-2xl text-iris dark:text-dk_iris">
-        How to use it?
-      </h1>
-      <p class="text-text dark:text-dk_text py-7">
-        Simple, you can just paste this
-        <a
-          href="https://startpage-rosepine.herokuapp.com/"
-          class="underline text-rose dark:text-dk_rose"
-          style="text-decoration: none"
+      <div class="hidden flex gap-8 text-text dark:text-dk_text">
+        <a href="/" class="font-bold uppercase opacity-40 link">Home</a>
+        <a href="/project.html" class="font-bold text-based dark:text-dk_based uppercase link active"
+          >Projects</a
         >
-          <strong> link </strong>
-        </a>
-        to URL and that's it.
-      </p>
-      <p class="text-text dark:text-dk_text">
-        But, there is another way to use it, You can add the
-        <strong>Start Page</strong> as default to make it permanent, so You can
-        use it forever
-      </p>
-      <div class="list-disc py-7">
-        <li class="text-text dark:text-dk_text">
-          First you need an extension.
-          <a
-            href="https://chrome.google.com/webstore/detail/fast-new-tab-redirect/ohnfdmfkceojnmepofncbddpdicdjcoi?hl=en-US"
-            class="text-rose dark:text-dk_rose underline"
-            style="text-decoration: none"
-            ><strong> Chrome </strong>
-          </a>
-          and
-          <a
-            href="https://addons.mozilla.org/en-US/firefox/addon/new-tab-override/"
-            class="text-rose dark:text-dk_rose underline"
-            style="text-decoration: none"
-            ><strong> Firefox </strong> </a
-          >.
-        </li>
-        <li class="text-text dark:text-dk_text">
-          Then, Paste this
+      </div>
+
+      <div class="flex justify-center gap-8 text-text dark:text-dk_text w-full">
+        <span>
+          <a href="/" class="font-bold uppercase opacity-40 link">Home</a>
+        </span>
+        <span>
+          <a href="/project.html" class="font-bold text-based dark:text-dk_based uppercase link active"
+            >Projects</a
+          >
+        </span>
+      </div>
+    </nav>
+
+    <main class="flex-1 mt-4 max-w-3xl mx-auto text-text dark:text-dk_text">
+      <div class="text-sm opacity-75 uppercase mt-6 font-semibold">
+        Nov 01, 2022
+      </div>
+      <h1
+        class="text-gold dark:text-dk_gold text-3xl font-black mt-2 border-b border-highlightHigh py-4"
+      >
+        How to Use Startpage
+      </h1>
+      <article class="text-lg big-margins text-text dark:text-dk_text">
+        <p>
+          Start Page is a New theme made by Rosé Pine that make your start page
+          of your browser looks new and clean.
+        </p>
+        <p>
+          Simple, you can just paste this
           <a
             href="https://startpage-rosepine.herokuapp.com/"
-            class="underline text-rose dark:text-dk_rose"
-            style="text-decoration: none"
-            ><strong>link</strong></a
+            class="text-iris dark:test-dk_iris"
           >
-          to your extension.
-        </li>
-        <li class="text-text dark:text-dk_text">Done.</li>
+            link
+          </a>
+          to URL and that's it.
+        </p>
+        <p>
+          But, there is another way to use it, You can add the Start Page as
+          default to make it permanent, so You can use it forever!
+        </p>
+        <ol class="pt-4 list-decimal">
+          <li class="text-text dark:text-dk_text marker:font-bold marker:text-text dark:marker:text-dk_text">
+            First you need an extension.
+            <a
+              href="https://chrome.google.com/webstore/detail/fast-new-tab-redirect/ohnfdmfkceojnmepofncbddpdicdjcoi?hl=en-US"
+              class="text-iris dark:test-dk_iris"
+              >Chrome
+            </a>
+            and
+            <a
+              href="https://addons.mozilla.org/en-US/firefox/addon/new-tab-override/"
+              class="text-iris dark:test-dk_iris"
+              >Firefox </a
+            >.
+          </li>
+          <li class="text-text dark:text-dk_text marker:font-bold marker:text-text dark:marker:text-dk_text">
+            Then, Paste this
+            <a
+              href="https://startpage-rosepine.herokuapp.com/"
+              class="text-iris dark:test-dk_iris"
+              >link</a
+            >
+            to your extension.
+          </li>
+          <li class="text-text dark:text-dk_text marker:font-bold marker:text-text dark:marker:text-dk_text">Done.</li>
+        </ol>
+      </article>
+    </main>
+    <footer
+      class="text-text dark:text-dk_text max-w-3xl w-full flex justify-between mx-auto items-center border-t border-highlightHigh py-6 mt-4 astro-A4YOCCPA"
+    >
+      <div class="opacity-50 text-text dark:text-dk_text">
+        &copy; Nicholas Alvi Saputra, 2022
       </div>
-    </div>
+      <button
+        class="inline-flex items-center gap-3 rounded-full bg-overlay dark:bg-dk_overlay px-5 py-3 text-text dark:text-dk_text transition-all hover:opacity-100 active:scale-95 active:transition-none astro-A4YOCCPA"
+        id="contact"
+      >
+        <svg
+          data-src="https://s2.svgbox.net/materialui.svg?ic=mail"
+          width="16"
+          height="16"
+          class="astro-A4YOCCPA"
+        ></svg>
+        Contact Me
+      </button>
+    </footer>
   </body>
+  <script
+    type="text/javascript"
+    src="https://unpkg.com/external-svg-loader@latest/svg-loader.min.js"
+    async
+  ></script>
   <script>
     tailwind.config = {
       theme: {
